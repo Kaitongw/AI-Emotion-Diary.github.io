@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <title>AI Emotion Diary</title>
+  <meta charset="UTF-8">
+  <title>AI 表情辨識心情日記</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    img {
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    .images {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    a {
+      color: #2980b9;
+    }
+  </style>
 </head>
 <body>
-    <h1>歡迎來到我的 AI 心情日記</h1>
-    <p>這是一個展示情緒辨識與心情日記生成的網站。</p>
+
+  <h1>🧠 AI 表情辨識 × 心情日記</h1>
+  <p>這個專題會利用 Teachable Machine 模型辨識情緒（Happy、Sad、Angry），並透過 ChatGPT 產生一段對應的心情日記。</p>
+
+  <h2>📸 表情範例圖片</h2>
+  <div class="images">
+    <div><img src="happy.png" alt="Happy" width="150"><p>😊 Happy</p></div>
+    <div><img src="sad.png" alt="Sad" width="150"><p>😢 Sad</p></div>
+    <div><img src="angry.png" alt="Angry" width="150"><p>😠 Angry</p></div>
+  </div>
+
+  <h2>📂 專案檔案下載</h2>
+  <ul>
+    <li><a href="emotion_demo.py.py" download>emotion_demo.py.py</a>（主程式）</li>
+    <li><a href="model.tflite" download>model.tflite</a>（Teachable Machine 模型）</li>
+    <li><a href="emotion_log.txt.txt" download>emotion_log.txt.txt</a>（紀錄檔）</li>
+  </ul>
+
+  <h2>🔧 使用說明</h2>
+  <p>執行 Python 程式後，系統會使用攝影機拍攝影像辨識使用者的情緒，並用 GPT 產生一段個人化心情日記。</p>
+
+  <footer style="margin-top: 50px; font-size: 14px; color: gray;">
+    <hr>
+    <p>© 2025 王愷彤 | AI 與生活 專題作品</p>
+  </footer>
 </body>
 </html>
